@@ -7,9 +7,21 @@
   justify-content: space-between;
 }
 
-svg {
+img {
+  max-width: 3vw;
   display: inline-block;
   vertical-align: top;
+}
+#logo{
+  display: inline-block;
+  align-content: center;
+  align-content: center;
+}
+#nomeEmpresa{
+  max-width: 6vw;
+  margin-top: 0.8vw;
+  display: inline-block;
+  align-content: center;
 }
 
 h1 {

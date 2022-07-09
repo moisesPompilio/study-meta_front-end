@@ -1,23 +1,32 @@
-import MyButton from './Button.vue';
+/* eslint-disable prettier/prettier */
+import MyButton from "./Button.vue";
 
 // More on default export: https://storybook.js.org/docs/vue/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Button',
+  title: 'Components/Button',
   component: MyButton,
   // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundColor: {
+      control: 'color'
+    },
     size: {
-      control: { type: 'select' },
+      control: {
+        type: 'select'
+      },
       options: ['small', 'medium', 'large'],
     },
   },
 };
 
 // More on component templates: https://storybook.js.org/docs/vue/writing-stories/introduction#using-args
-const Template = (args, { argTypes }) => ({
+const Template = (args, {
+  argTypes
+}) => ({
   props: Object.keys(argTypes),
-  components: { MyButton },
+  components: {
+    MyButton
+  },
   template: '<my-button @onClick="onClick" v-bind="$props" />',
 });
 

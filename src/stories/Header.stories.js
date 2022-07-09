@@ -1,7 +1,8 @@
+/* eslint-disable prettier/prettier */
 import MyHeader from './Header';
 
 export default {
-  title: 'Example/Header',
+  title: 'Components/Header',
   component: MyHeader,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/vue/configure/story-layout
