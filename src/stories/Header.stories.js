@@ -1,8 +1,8 @@
 /* eslint-disable prettier/prettier */
-import MyHeader from './Header';
+import MyHeader from '../components/complexity/Header';
 
 export default {
-  title: 'Components/Header',
+  title: 'Components/Complexity/Header',
   component: MyHeader,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/vue/configure/story-layout
@@ -23,6 +23,3 @@ LoggedIn.args = {
     name: 'Jane Doe',
   },
 };
-
-export const LoggedOut = Template.bind({});
-LoggedOut.args = {};

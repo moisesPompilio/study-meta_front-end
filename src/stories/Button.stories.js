@@ -1,9 +1,9 @@
 /* eslint-disable prettier/prettier */
-import MyButton from "./Button.vue";
+import MyButton from "../components/comuns/Button.vue";
 
 // More on default export: https://storybook.js.org/docs/vue/writing-stories/introduction#default-export
 export default {
-  title: 'Components/Button',
+  title: 'Components/Comum/Button',
   component: MyButton,
   // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes
   argTypes: {

@@ -4,8 +4,65 @@ section {
   line-height: 24px;
   padding: 48px 20px;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 40%;
   color: #333;
+}
+
+#logo-completa{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 40vh;
+  height: 30vh;
+}
+#logo-completa-img{
+  margin-left: 50%;
+}
+#login{
+  margin-top: 2.5%;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center
+}
+#passowrd{
+  margin-top: 3vh;
+}
+#name{
+  margin-top: 3vh;
+}
+#confimedPassowrd{
+  margin-top: 3vh;
+}
+#enviar-login{
+  font-size: 30px;
+  margin: 7vh 0 0vh 0;
+  color: white;
+  background-color: #32A4E6;
+  width: 100%;
+  height: 7vh;
+  border: 2px solid  #0000;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
+.input-login{
+  width: 80%;
+  margin: 0;
+  border: 0.5px solid;
+  border-radius: 5px;
+  height: 7vh;
+  margin: auto
+}
+v-row{
+  align-items: center;
+  margin: 0;
+}
+v-col{
+  margin: 0;
+}
+label{
+  font-size: 150%;
 }
 
 section h2 {
@@ -51,7 +108,7 @@ section .tip {
 section .tip-wrapper {
   font-size: 13px;
   line-height: 20px;
-  margin-top: 40px;
+  margin-top: 10px;
   margin-bottom: 40px;
 }
 

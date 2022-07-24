@@ -23,12 +23,15 @@ export default {
       type: String,
       default: "medium",
       validator: function (value) {
-        return ["small", "medium", "large"].indexOf(value) !== -1;
+        return ["small", "medium", "large", "extension"].indexOf(value) !== -1;
       },
     },
     backgroundColor: {
       type: String,
     },
+    color:{
+      type: String,
+    }
   },
 
   computed: {
@@ -43,6 +46,7 @@ export default {
     style() {
       return {
         backgroundColor: this.backgroundColor,
+        color: this.color,
       };
     },
   },
