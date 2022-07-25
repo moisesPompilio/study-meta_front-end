@@ -47,15 +47,8 @@ export default {
     onLogout() {
       this.$emit("onLogout");
     },
-    alert() {
-      return Cookies.get("alert");
-    },
-    fechar() {
-      Cookies.set("alert", null);
-    },
   },
   mounted() {
-    console.log(this.user);
   },
 };
 </script>

@@ -29,6 +29,8 @@ export default {
       await Cookies.set("token", null);
       await Cookies.set("refreshToken", null);
       await Cookies.set("user_name", null);
+      await Cookies.set("user_materia", null);
+      this.$router.push({ name: "Login" });
     },
   },
 };

@@ -8,20 +8,21 @@
 }
 
 img {
-  max-width: 5vw;
-  display: inline-block;
+  max-width: 15%;
   vertical-align: top;
 }
 #logo{
   display: inline-block;
   align-content: center;
-  align-content: center;
+  margin-right: 0;
+  padding: 0;
 }
 #nomeEmpresa{
-  max-width: 6vw;
-  margin-top: 0.8vw;
+  max-width: 30%;
+  margin-left: 0;
   display: inline-block;
   align-content: center;
+  padding: 0;
 }
 
 h1 {

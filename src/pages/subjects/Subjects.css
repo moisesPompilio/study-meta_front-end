@@ -14,14 +14,14 @@
 }
 
 #metas {
-    margin: 3vh 1.3vw;
+    margin: 3vh 1vw;
     align-items: center;
     justify-content: space-between;
     display: inline-block;
 }
 
 #filter {
-    padding: 15px 20px;
+    margin: 3vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,15 +29,28 @@
 
 .meta-iten {
     width: 30vw;
-    height: 70vh;
+    height: auto;
 }
 
 .buttons-meta {
-    width: 100%;
-    padding: 15px 20px;
-    display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: 0%;
+    margin-left: 0;
+}
+.button{
+    margin-right: 0%;
+    margin-left: 0;
+}
+
+#title {
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    margin: 3%;
+    text-align: center;
 }
 
 h2 {
@@ -54,11 +67,42 @@ h3 {
 
 p {
     padding: 10%;
-    white-space: inherit;
+    white-space: normal;
     width: 100%;
     height: 30vh;
     overflow: hidden;
+    transition: overflow 1s, height 2s;
 }
-p:hover{
-    overflow: auto;
+
+p:hover {
+    overflow: visible;
+    min-height: 30vh;
+    height: auto;
+}
+
+
+#overlay-edit {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+#menu-edit {
+    position: fixed;
+    top: 10%;
+    left: 25%;
+    right: 25%;
+    width: 50%;
+    height: 80%;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-edit{
+    padding: 10% 3%;
 }

@@ -101,9 +101,14 @@ export default {
             await Cookies.set("token", res.data.token.token);
             await Cookies.set("refreshToken", res.data.token.refreshToken);
             await Cookies.set("user_name", res.data.name);
+            this.$router.push({ name: "Subjects" });
           })
-          .catch((error) => {
-            console.log(error.message);
+          .catch(async (error) => {
+            let message = await error.response.data.msg;
+            console.log(message);
+            this.$alert(message, "Error", "error", {
+             confirmButtonText: "Got it!"
+            });
           });
       } else {
         Axios.post("http://localhost:3000/usuario", body)
