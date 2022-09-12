@@ -61,7 +61,7 @@
               type="password"
             />
           </v-row>
-          <input type="submit" value="Entrar" id="enviar-login" />
+         <v-btn type="submit" id="enviar-login" > Entrar</v-btn> 
         </v-card>
       </form>
     </section>
@@ -74,7 +74,7 @@ import Axios from "axios";
 import MyButton from "../../../components/comuns/Button.vue";
 //import { api, baseApiUrl } from "../../../config/axios";
 import api from "../../../config/axios";
-import MyHeader from "../../../components/complexity/Header.vue";
+import MyHeader from "../../../components/complexity/Headear/index.vue";
 import Cookies from "js-cookie";
 
 export default {
@@ -101,7 +101,8 @@ export default {
             await Cookies.set("token", res.data.token.token);
             await Cookies.set("refreshToken", res.data.token.refreshToken);
             await Cookies.set("user_name", res.data.name);
-            this.$router.push({ name: "Subjects" });
+            console.log(res.data);
+            this.$router.push({ name: "Metas" });
           })
           .catch(async (error) => {
             let message = await error.response.data.msg;

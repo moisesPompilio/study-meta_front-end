@@ -1,5 +1,6 @@
 {
   "name": "Study-Meta",
+  "description": "the Study-Meta is the web site to help you in the studies and the assist in to reach your goals",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,11 +12,13 @@
     "storybook": "start-storybook -p 6006"
   },
   "dependencies": {
+    "@mdi/js": "^7.0.96",
     "axios": "^0.27.2",
     "bootstrap": "^5.1.3",
     "bootstrap-vue": "^2.22.0",
     "core-js": "^3.8.3",
     "js-cookie": "^3.0.1",
+    "moment": "^2.29.4",
     "vue": "^2.6.14",
     "vue-resource": "^1.5.3",
     "vue-router": "3.5.3",

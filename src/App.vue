@@ -8,8 +8,9 @@
 </template>
 
 <script>
-import MyHeader from "./components/complexity/Header.vue";
+import MyHeader from "./components/complexity/Headear/index.vue";
 import Cookies from "js-cookie";
+import axios from "axios";
 export default {
   name: "App",
 
@@ -29,7 +30,7 @@ export default {
       await Cookies.set("token", null);
       await Cookies.set("refreshToken", null);
       await Cookies.set("user_name", null);
-      await Cookies.set("user_materia", null);
+      await Cookies.set("user_metas", null);
       this.$router.push({ name: "Login" });
     },
   },

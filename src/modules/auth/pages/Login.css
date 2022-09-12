@@ -8,60 +8,73 @@ section {
   color: #333;
 }
 
-#logo-completa{
-  display: flex;
-  flex-wrap: wrap;
+#logo-completa {
+  margin: 0;
+  padding: 0;
   justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  width: 40vh;
-  height: 30vh;
+  height: auto;
+  width: 100%;
 }
-#logo-completa-img{
-  margin-left: 50%;
+
+#logo-completa-img {
+  width: 100%;
+  height: 215px;
+  min-width: 40%;
+  object-fit: cover;
+  object-position: bottom;
 }
-#login{
+
+#login {
   margin-top: 2.5%;
   justify-content: center;
   flex-direction: row;
   text-align: center
 }
-#passowrd{
+
+#passowrd {
   margin-top: 3vh;
 }
-#name{
+
+#name {
   margin-top: 3vh;
 }
-#confimedPassowrd{
+
+#confimedPassowrd {
   margin-top: 3vh;
 }
-#enviar-login{
+
+#enviar-login {
   font-size: 30px;
   margin: 7vh 0 0vh 0;
   color: white;
   background-color: #32A4E6;
   width: 100%;
   height: 7vh;
-  border: 2px solid  #0000;
+  border: 2px solid #0000;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
 }
-.input-login{
+
+.input-login {
   width: 80%;
   margin: 0;
   border: 0.5px solid;
   border-radius: 5px;
   height: 7vh;
-  margin: auto
+  margin: auto;
+  text-align: center;
 }
-v-row{
+
+v-row {
   align-items: center;
   margin: 0;
 }
-v-col{
+
+v-col {
   margin: 0;
 }
-label{
+
+label {
   font-size: 150%;
 }
 
@@ -123,4 +136,53 @@ section .tip-wrapper svg {
 
 section .tip-wrapper svg path {
   fill: #1ea7fd;
+}
+
+@media screen and (max-width: 500px) {
+  section {
+    max-width: 95%
+  }
+
+  #login {
+    margin-top: 4.5%;
+  }
+  #logo-completa {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+  }
+  
+  #logo-completa-img {
+    width: 100%;
+    height: 150px;
+    min-width: 47%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+}
+@media screen and (max-width: 400px) {
+  section {
+    max-width: 95%
+  }
+
+  #login {
+    margin-top: 4.5%;
+  }
+  #logo-completa {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+  }
+  
+  #logo-completa-img {
+    width: 100%;
+    height: 150px;
+    min-width: 57%;
+    object-fit: cover;
+    object-position: bottom;
+  }
 }

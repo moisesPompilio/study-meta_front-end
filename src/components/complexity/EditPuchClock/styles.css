@@ -1,0 +1,73 @@
+#overlay-edit {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+#menu-edit {
+    position: fixed;
+    top: 10%;
+    left: 25%;
+    right: 25%;
+    width: 50%;
+    height: 80%;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-edit{
+    padding: 10% 3%;
+}
+.buttons-edit {
+    align-items: right;
+    margin: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.button{
+    margin: 0;
+}
+#cancelar-colum{
+    text-align: right;
+}
+v-data-table {
+    height:80%;
+}
+@media screen and (max-width: 500px) {
+    #menu-editPuchClock {
+        position: fixed;
+        top: 10%;
+        left: 2.5%;
+        right: 2.5%;
+        width: 95%;
+        height: 50%;
+        z-index: 1;
+        align-items: center;
+    }
+    #menu-edit {
+        position: fixed;
+        top: 30%;
+        left: 2.5%;
+        right: 2.5%;
+        width: 95%;
+        height: 50%;
+        z-index: 1;
+        align-items: center;
+    }
+
+    .button {
+        margin: 0;
+    }
+
+    .input-edit {
+        padding: 10% 3%;
+        text-align: center;
+        margin: 0;
+    }
+}

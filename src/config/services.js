@@ -1,6 +1,3 @@
 
-import { services as auth } from "@/modules/auth";
+export default setup;
 
-export default {
-  auth,
-};

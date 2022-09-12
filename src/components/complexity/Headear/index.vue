@@ -3,9 +3,9 @@
   <header>
     <div class="wrapper">
       <div id="logo">
-        <img src="../../assets/logo.png" alt="logo" />
+        <img src="../../../assets/logo.png" alt="logo" id="logo-image"/>
         <img
-          src="../../assets/logo-name.png"
+          src="../../../assets/logo-name.png"
           alt="nomeEmpresa"
           id="nomeEmpresa"
         />
@@ -28,8 +28,8 @@
 </template>
 
 <script>
-import "./header.css";
-import MyButton from "../comuns/Button.vue";
+import "./styles.css";
+import MyButton from "../../comuns/Button.vue";
 import Cookies from "js-cookie";
 export default {
   name: "my-header",

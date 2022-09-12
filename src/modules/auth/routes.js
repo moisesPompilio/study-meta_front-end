@@ -2,7 +2,7 @@
 export default [
     {
         name: 'Login',
-        path: '/Login',
+        path: '/',
         component: () => import('./pages/Login.vue')
       }
 ]

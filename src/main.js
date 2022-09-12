@@ -4,7 +4,6 @@ import vuetify from "./plugins/vuetify";
 import router from "./router/index.js";
 import VueResource from "vue-resource";
 import VueSimpleAlert from "vue-simple-alert";
-
 Vue.use(VueSimpleAlert);
 
 
